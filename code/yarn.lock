@@ -2322,7 +2322,7 @@
     "normalize-path" "^3.0.0"
     "picomatch" "^2.0.4"
 
-"app@*", "app@file:/home/zee/Desktop/projects/tachuser/code/packages/app":
+"app@*", "app@file:/home/zee/Desktop/tachusersolito/code/packages/app":
   "resolved" "file:packages/app"
   "version" "0.0.0"
   dependencies:
@@ -4537,7 +4537,7 @@
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.1"
 
-"expo-app@file:/home/zee/Desktop/projects/tachuser/code/apps/expo":
+"expo-app@file:/home/zee/Desktop/tachusersolito/code/apps/expo":
   "resolved" "file:apps/expo"
   "version" "1.0.0"
   dependencies:
@@ -4801,13 +4801,21 @@
   dependencies:
     "flat-cache" "^3.0.4"
 
-"file-loader@~6.0.0":
+"file-loader@^6.0.0", "file-loader@~6.0.0":
   "integrity" "sha512-/aMOAYEFXDdjG0wytpTL5YQLfZnnTmLNjn+AIrJ/6HVnTfDqLsVKUUwkDf4I4kgex36BvjuXEn/TX9B/1ESyqQ=="
   "resolved" "https://registry.npmjs.org/file-loader/-/file-loader-6.0.0.tgz"
   "version" "6.0.0"
   dependencies:
     "loader-utils" "^2.0.0"
     "schema-utils" "^2.6.5"
+
+"file-loader@^6.2.0":
+  "integrity" "sha512-qo3glqyTa61Ytg4u73GultjHGjdRyig3tG6lPtyX/jOEJvHif9uB0/OCI2Kif6ctF3caQTW2G5gym21oAsI4pw=="
+  "resolved" "https://registry.npmjs.org/file-loader/-/file-loader-6.2.0.tgz"
+  "version" "6.2.0"
+  dependencies:
+    "loader-utils" "^2.0.0"
+    "schema-utils" "^3.0.0"
 
 "filesize@6.1.0":
   "integrity" "sha512-LpCHtPQ3sFx67z+uh2HnSyWSLLu5Jxo21795uRDuar/EOuYWXib5EmPaGIBuSnRqH2IODiKA2k5re/K9OnN/Yg=="
@@ -7129,7 +7137,7 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
-"next-app@file:/home/zee/Desktop/projects/tachuser/code/apps/next":
+"next-app@file:/home/zee/Desktop/tachusersolito/code/apps/next":
   "resolved" "file:apps/next"
   "version" "0.1.0"
   dependencies:
@@ -7142,6 +7150,22 @@
   "integrity" "sha512-OjJ+fV15FXO2uQXQagLD4C0abYErBjyjE0I0FHpOEIB8upw0hg1ldFP6cqHTJBH1cZqy96OeR3u1dJ+Ez2D4Bg=="
   "resolved" "https://registry.npmjs.org/next-compose-plugins/-/next-compose-plugins-2.2.1.tgz"
   "version" "2.2.1"
+
+"next-fonts@^1.5.1":
+  "integrity" "sha512-pgEJ40xO1oRhM6RqhQJ9CzuZOFp6Zq+aAD/V1P9sq/wdepvLzhFxDm3lCZNoE7+78NSuMKgT6b1qeXSsqWuUMQ=="
+  "resolved" "https://registry.npmjs.org/next-fonts/-/next-fonts-1.5.1.tgz"
+  "version" "1.5.1"
+  dependencies:
+    "file-loader" "^6.0.0"
+    "url-loader" "^4.0.0"
+
+"next-images@^1.8.4":
+  "integrity" "sha512-E6JV+aMxeUCh8A+cwn1xgmlh/zINSW4JC/XLNbM+PWQd5LBdfB+m1IDCAfNnGOKMo96kzw+4LsKxnX/Kldw78Q=="
+  "resolved" "https://registry.npmjs.org/next-images/-/next-images-1.8.4.tgz"
+  "version" "1.8.4"
+  dependencies:
+    "file-loader" "^6.2.0"
+    "url-loader" "^4.1.0"
 
 "next-transpile-modules@^9.0.0":
   "integrity" "sha512-VCNFOazIAnXn1hvgYYSTYMnoWgKgwlYh4lm1pKbSfiB3kj5ZYLcKVhfh3jkPOg1cnd9DP+pte9yCUocdPEUBTQ=="
@@ -10114,7 +10138,7 @@
   "resolved" "https://registry.npmjs.org/urix/-/urix-0.1.0.tgz"
   "version" "0.1.0"
 
-"url-loader@~4.1.0":
+"url-loader@^4.0.0", "url-loader@^4.1.0", "url-loader@~4.1.0":
   "integrity" "sha512-3BTV812+AVHHOJQO8O5MkWgZ5aosP7GnROJwvzLS9hWDj00lZ6Z0wNak423Lp9PBZN05N+Jk/N5Si8jRAlGyWA=="
   "resolved" "https://registry.npmjs.org/url-loader/-/url-loader-4.1.1.tgz"
   "version" "4.1.1"
