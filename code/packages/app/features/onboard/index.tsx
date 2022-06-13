@@ -29,8 +29,8 @@ import {
   AntDesign,
   Entypo,
 } from '@expo/vector-icons'
-import { vw } from 'app/utils'
 import Button from 'app/components/atoms/Button'
+
 const Container = styled(View)({
   width: '100%',
   height: '100%',
@@ -45,7 +45,6 @@ const Showcase = styled(View)({
   justifyContent: 'center',
   alignItems: 'center',
   borderTopRightRadius: SIZES.$7,
-  // borderBottomLeftRadius: SIZES.$7,
   borderBottomRightRadius: SIZES.$7,
 })
 
@@ -65,7 +64,7 @@ const Login = styled(View)({
 const CompanyName = styled(Text)({
   color: '$primary',
   textAlign: 'center',
-  fontSize: vw(6),
+  fontSize: FONTS.lg,
   fontWeight: 'black',
 })
 
@@ -75,7 +74,7 @@ const Form = styled(View)({
 })
 
 const WelcomeText = styled(Text)({
-  fontSize: FONTS.md,
+  fontSize: Platform.OS === 'web' ? FONTS.lg : FONTS.sm,
   fontWeight: 'bold',
   textAlign: 'center',
 })
@@ -84,13 +83,16 @@ const Field = styled(View)({
   width: Platform.OS === 'web' ? '50%' : '100%',
   alignSelf: 'center',
 })
+
 const FieldName = styled(Text)({
   marginTop: SIZES.$2,
   fontWeight: 'light',
 })
+
 const FieldLayout = styled(View)({
   flexDirection: 'row',
 })
+
 const Initial = styled(Text)({
   fontSize: SIZES.$1,
   marginTop: SIZES.$2,
@@ -164,25 +166,25 @@ const Footer = styled(Text)({
 })
 
 export function OnboardScreen() {
-  const sx = useSx()
   const { push } = useRouter()
   const [state, setState] = React.useState<string>('number')
   const [phoneNumber, setPhoneNumber] = React.useState<string>('')
   const [error, setError] = React.useState<string>('')
-  const handleLogin = () => {
+  const handleVerify = () => {
+    push({
+      pathname: '/',
+      // query: {
+      //   slug: 'drake',
+      // },
+    })
+  }
+  const handleNumberInput = () => {
     console.log('Handling Login')
     if (!phoneNumber) {
       setError('Please enter the Phone Number.')
       return
     }
     if (phoneNumber.length === 10) {
-      console.log('Successfull Login')
-      // push({
-      //   pathname: '/',
-      //   query: {
-      //     slug: 'drake',
-      //   },
-      // })
       setState('otp')
     } else {
       setError('Invalid Phone Number')
@@ -192,7 +194,17 @@ export function OnboardScreen() {
     <Container>
       <Showcase>
         <ImageWrapper>
-          <DisplayImage image={onboardDeliveryGuy} width={1200} height={1000} />
+          <DisplayImage
+            border={false}
+            styles={{ marginLeft: SIZES.$1 }}
+            image={onboardDeliveryGuy}
+            width={1200}
+            nativeWidth={1200}
+            height={1000}
+            nativeHeight={1000}
+            mode="intrinsic"
+            nativeMode="contain"
+          />
         </ImageWrapper>
       </Showcase>
       <Login>
@@ -220,7 +232,7 @@ export function OnboardScreen() {
               </FieldLayout>
             </Field>
             <Error>{error}</Error>
-            <Pressable onPress={handleLogin}>
+            <Pressable onPress={handleNumberInput}>
               <LoginButton>
                 <LoginButtonText selectable={false} sx={{ color: 'white' }}>
                   Login
@@ -243,10 +255,11 @@ export function OnboardScreen() {
               <ThemeColorText bold>+91 939 001 6592</ThemeColorText>
             </SendMessage>
             <OtpInput />
-            <Button text={'Verify'} width={50} bg={'primary'} />
+            <Pressable onPress={handleVerify}>
+              <Button text={'Verify'} width={50} bg={'primary'} />
+            </Pressable>
           </OTP>
         )}
-
         <Footer>
           <ThemeColorText bold={false}>©Tach 2021</ThemeColorText>, All rights
           Reserved

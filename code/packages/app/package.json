@@ -3,12 +3,27 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@react-navigation/bottom-tabs": "^6.3.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
+    "@types/styled-components": "^5.1.25",
     "dripsy": "^3.6.0",
     "expo-linking": "^3.0.0",
+    "graphql": "^16.5.0",
     "moti": "canary",
-    "solito": "latest"
+    "solito": "latest",
+    "styled-components": "^5.3.5"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "gen": "graphql-codegen --config codegen.yml"
+  },
+  "devDependencies": {
+    "@graphql-codegen/typescript-operations": "2.4.2",
+    "@graphql-codegen/typescript": "2.5.1",
+    "@graphql-codegen/typescript-react-apollo": "3.2.16",
+    "@graphql-codegen/introspection": "2.1.1",
+    "@graphql-codegen/cli": "2.6.2"
+  }
 }

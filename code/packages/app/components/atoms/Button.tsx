@@ -8,7 +8,7 @@ const Container = styled(View)({
   padding: SIZES.$2,
   borderRadius: SIZES.$4,
 })
-const ButtonText = styled(View)({
+const ButtonText = styled(Text)({
   color: '$white',
   fontSize: FONTS.md,
   fontWeight: 'bold',

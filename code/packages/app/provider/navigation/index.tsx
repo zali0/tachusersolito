@@ -17,6 +17,11 @@ export function NavigationProvider({
             screens: {
               onboard: 'onboard',
               home: '',
+              search: 'search',
+              location: 'location',
+              category: 'category/:id',
+              products: 'products/:id',
+              bag: 'bag',
               'user-detail': 'user/:id',
             },
           },

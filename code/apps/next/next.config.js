@@ -4,6 +4,12 @@ const nextConfig = {
   webpack5: true,
   images: {
     disableStaticImages: true,
+    domains: [
+      'img.freepik.com',
+      'www.veggycation.com.au',
+      's1.1zoom.me',
+      'image.shutterstock.com',
+    ],
   },
 }
 
