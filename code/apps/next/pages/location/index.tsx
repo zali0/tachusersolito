@@ -1,3 +1,3 @@
-import LocationScreen from 'app/features/location'
+import {Location} from 'app/features'
 
-export default LocationScreen
+export default Location

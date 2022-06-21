@@ -12,7 +12,7 @@ import {
     Entypo,
 } from '@expo/vector-icons'
 import ShowcaseCarousel from 'app/components/ShowcaseCarousel'
-import { products } from '../home/screen'
+import { products } from '../home'
 const Container = styled(View)({
     width: '100%',
     height: '100%',
@@ -66,7 +66,7 @@ const Loading = () => {
         </LoadingView>
     )
 }
-const SearchScreen = () => {
+const Search = () => {
     return (
         <Container>
             <TitleBar title={'Search'} />
@@ -84,4 +84,4 @@ const SearchScreen = () => {
     )
 }
 
-export default SearchScreen
+export default Search

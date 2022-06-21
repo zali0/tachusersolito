@@ -2,11 +2,11 @@ import { View, Text, styled } from 'dripsy'
 import React from 'react'
 import TitleBar from 'app/components/Titlebar'
 import { DisplayImage, vw } from 'app/utils'
-import { products } from '../home/screen'
+import { products } from '../home'
 import { COLORS } from 'app/constants'
 import ShowcaseCarousel from 'app/components/ShowcaseCarousel'
 
-const Product = styled(View)({
+const Container = styled(View)({
     width: '80%',
     flexDirection: 'row',
     alignSelf: 'center',
@@ -87,11 +87,11 @@ const Plus = styled(Text)({
 })
 
 
-const ProductScreen = () => {
+const Product = () => {
     return (
         <View>
             <TitleBar title={'Product Name'} />
-            <Product >
+            <Container >
                 <ProductImage>
                     <DisplayImage
                         border={false}
@@ -122,10 +122,10 @@ const ProductScreen = () => {
                         </PriceFunction>
                     </PriceArea>
                 </ProductInfo>
-            </Product>
+            </Container>
             <ShowcaseCarousel heading={"Frequenty bought"} em={"togeather"} products={products} />
         </View>
     )
 }
 
-export default ProductScreen
+export default Product

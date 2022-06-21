@@ -15,5 +15,9 @@
   "scripts": {
     "native": "cd apps/expo && expo start",
     "web": "cd apps/next && npx next"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "graphql": "^16.5.0"
   }
 }

@@ -16,7 +16,6 @@ const DisplayImage = ({
   border
 }) => {
   if (Platform.OS === 'web') {
-    console.log('width', width)
     return (
       <>
         <View sx={styles}>

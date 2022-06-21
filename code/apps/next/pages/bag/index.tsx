@@ -1,3 +1,3 @@
-import BagScreen from 'app/features/bag'
+import { Bag } from 'app/features'
 
-export default BagScreen
+export default Bag

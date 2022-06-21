@@ -1,3 +1,3 @@
-import { OnboardScreen } from 'app/features/onboard'
+import { OnBoard } from 'app/features'
 
-export default OnboardScreen
+export default OnBoard

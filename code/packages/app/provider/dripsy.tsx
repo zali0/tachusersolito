@@ -13,7 +13,7 @@ import LatoBoldItalic from 'app/assets/fonts/Lato-BoldItalic.ttf'
 import LatoBlack from 'app/assets/fonts/Lato-Black.ttf'
 import LatoBlackItalic from 'app/assets/fonts/Lato-BlackItalic.ttf'
 
-export function Fonts({ children }) {
+const Fonts = ({ children }) => {
   const [loaded, error] = useFonts({
     latoThin: LatoThin,
     latoThinItalic: LatoThinItalic,
@@ -26,7 +26,6 @@ export function Fonts({ children }) {
     latoBlack: LatoBlack,
     latoBlackItalic: LatoBlackItalic,
   })
-  console.log(error)
   return <>{loaded && children}</>
 }
 

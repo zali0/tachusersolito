@@ -5,7 +5,7 @@ import { DisplayImage } from 'app/utils'
 import { View, Text, styled } from 'dripsy'
 import React from 'react'
 import { createParam } from 'solito'
-import { products } from '../home/screen'
+import { products } from '../home'
 
 const Container = styled(View)({
 

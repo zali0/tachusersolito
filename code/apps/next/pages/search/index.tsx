@@ -1,3 +1,3 @@
-import SearchScreen from 'app/features/search'
+import { Search } from 'app/features'
 
-export default SearchScreen
+export default Search 

@@ -21,6 +21,7 @@ export const COLORS = {
   black: '#000000',
   grey: '#646464',
   darkSecondary: '#0F0F0C',
+  error: '#ac0000'
 }
 export const FONTS = {
   xxs: Platform.OS === 'web' ? vw(0.1) : vw(0.1),

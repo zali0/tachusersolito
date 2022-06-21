@@ -33,7 +33,6 @@ import ThemeColorText from 'app/components/atoms/ThemeColorText'
 import ShowcaseCarousel from 'app/components/ShowcaseCarousel'
 import Categories from 'app/components/Categories'
 import SpecialCarousel from 'app/components/SpecialCarousel'
-
 const Container = styled(ScrollView)({
   width: '100%',
   bg: '#F5F5F5',
@@ -224,8 +223,7 @@ const products = [
 
 export { products, banners }
 
-export function HomeScreen() {
-
+const Home = () => {
   const renderBanner = ({ item }) => (
     <Link href={`/category/${item.id}`}>
       <Banner
@@ -304,3 +302,5 @@ export function HomeScreen() {
     </Container>
   )
 }
+
+export default Home;

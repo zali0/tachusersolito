@@ -2,12 +2,12 @@ import TitleBar from 'app/components/Titlebar'
 import { View, Text } from 'dripsy'
 import React from 'react'
 
-const LocationScreen = () => {
+const Location = () => {
     return (
-        <View> 
+        <View>
             <TitleBar title={'Location'} />
         </View>
     )
 }
 
-export default LocationScreen
+export default Location

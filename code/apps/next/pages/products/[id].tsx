@@ -1,3 +1,3 @@
-import ProductScreen from 'app/features/product'
+import { Product } from 'app/features'
 
-export default ProductScreen
+export default Product

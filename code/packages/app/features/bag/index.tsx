@@ -3,7 +3,7 @@ import React from 'react'
 import TitleBar from 'app/components/Titlebar'
 import { SIZES } from 'app/constants'
 import { DisplayImage, vw } from 'app/utils'
-import { products } from '../home/screen'
+import { products } from '../home'
 import BagProduct from 'app/components/BagProduct'
 
 const BannerWrapper = styled(View)({
@@ -27,7 +27,7 @@ const ButtonText = styled(Text)({
     textAlign: 'center'
 })
 
-const BagScreen = () => {
+const Bag = () => {
     return (
         <View>
             <TitleBar title={'Shopping bag'} />
@@ -55,4 +55,4 @@ const BagScreen = () => {
     )
 }
 
-export default BagScreen
+export default Bag

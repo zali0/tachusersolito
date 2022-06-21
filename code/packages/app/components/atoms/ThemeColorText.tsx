@@ -6,7 +6,7 @@ const ThemeColor = styled(Text)({
 })
 const ThemeColorText = ({ children, bold }) => {
   return (
-    <ThemeColor sx={{ fontWeight: bold ? 'bold' : '' }}>{children}</ThemeColor>
+    <ThemeColor sx={{ fontWeight: bold ? 'bold' : null }}>{children}</ThemeColor>
   )
 }
 

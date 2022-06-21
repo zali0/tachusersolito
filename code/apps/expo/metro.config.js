@@ -16,4 +16,7 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, 'node_modules'),
 ]
 
-module.exports = config
+config.resolver.sourceExts.push('cjs')
+config.resolver.assetExts.push("cjs")
+
+module.exports = config;

@@ -3,13 +3,16 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@apollo/client": "^3.4.16",
     "@graphql-codegen/cli": "^2.6.2",
     "@react-navigation/bottom-tabs": "^6.3.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
     "@types/styled-components": "^5.1.25",
     "dripsy": "^3.6.0",
+    "expo-firebase-recaptcha": "^2.2.0",
     "expo-linking": "^3.0.0",
+    "firebase": "^9.8.3",
     "graphql": "^16.5.0",
     "moti": "canary",
     "solito": "latest",
@@ -20,10 +23,10 @@
     "gen": "graphql-codegen --config codegen.yml"
   },
   "devDependencies": {
-    "@graphql-codegen/typescript-operations": "2.4.2",
-    "@graphql-codegen/typescript": "2.5.1",
-    "@graphql-codegen/typescript-react-apollo": "3.2.16",
+    "@graphql-codegen/cli": "2.6.2",
     "@graphql-codegen/introspection": "2.1.1",
-    "@graphql-codegen/cli": "2.6.2"
+    "@graphql-codegen/typescript": "2.5.1",
+    "@graphql-codegen/typescript-operations": "2.4.2",
+    "@graphql-codegen/typescript-react-apollo": "3.2.16"
   }
 }
